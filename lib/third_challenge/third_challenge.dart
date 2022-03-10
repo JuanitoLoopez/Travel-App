@@ -17,8 +17,8 @@ class ThirdChallenge extends StatelessWidget {
         padding: const EdgeInsets.all(25.00),
         scrollDirection: Axis.vertical,
         children: [
-          Designer("Amanda Murphy", 04),
-          Designer("Grace Hartwell", 15),
+          Designer("Amanda Murphy", 04, "assets/img/tennis.jpg"),
+          Designer("Grace Hartwell", 15, "assets/img/dolphin.jpg"),
         ],
       ),
     );
