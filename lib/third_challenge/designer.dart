@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/model/person.dart';
 
 class Designer extends StatelessWidget {
   Designer(this.designerName, this.designerExp, this.pathImage,
@@ -7,6 +8,8 @@ class Designer extends StatelessWidget {
   String designerName;
   int designerExp = 0;
   String pathImage = "";
+
+  Persona persona = new Persona();
 
 
   @override
@@ -45,7 +48,7 @@ class Designer extends StatelessWidget {
         shape: BoxShape.circle,
         image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage("assets/img/radio.jpg")
+            image: AssetImage("https://rickandmortyapi.com/api/character/avatar/1.jpeg")
         )
     ),
   );
