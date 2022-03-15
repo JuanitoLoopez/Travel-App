@@ -1,15 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/model/person.dart';
+import 'package:http/http.dart' as http;
 
-class Designer extends StatelessWidget {
+
+class Designers extends StatefulWidget {
+  const ({Key? key}) : super(key: key);
+
+  @override
+  State<> createState() => _State();
+}
+
+class _State extends State<> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+
+
+class Designer extends StatefulWidgetWidget {
+
+  Future<String> _imgPath = "https://rickandmortyapi.com/api/character/avatar/1.jpeg";
+
+  Future<String> getPersonas() async {
+    final response = await http.get("https://rickandmortyapi.com/api/character/avatar/1.jpeg");
+  }
+
+
   Designer(this.designerName, this.designerExp, this.pathImage,
       {Key? key}) : super(key: key);
 
   String designerName;
   int designerExp = 0;
   String pathImage = "";
-
-  Persona persona = new Persona();
 
 
   @override
